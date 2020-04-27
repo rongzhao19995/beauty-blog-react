@@ -1,14 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import { AppContextProvider } from './context/AppContext';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+
+<ParallaxProvider>
+<AppContextProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </AppContextProvider>
+</ParallaxProvider>
+,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
