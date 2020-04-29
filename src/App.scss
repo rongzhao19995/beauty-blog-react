@@ -82,9 +82,10 @@ $web: 992px;
 .nav-mobile-wrapper {
   position: absolute;
   width: 100vw;
+  z-index: 5;
 
   .navbar-mobile {
-    
+
     &.c-close {
       background-color:white;
     }
@@ -226,25 +227,47 @@ $web: 992px;
 
     .tilt-logo {
       position: absolute;
-      top: 20%; 
+      top: 15%;
+      // margin: 0 auto;
 
       // sm ~ md- mobile ~ tablet
       // reason being is that some mobile screen on landscape is bigger than ipad width.
       @media screen  and (max-width: $web) and (orientation : portrait) {
-        top: 10%;
-        left: 15%;
-      }     
-      
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0%;
+      }
+
       // sm ~ md- mobile ~ tablet
       // reason being is that some mobile screen on landscape is bigger than ipad width.
       @media screen and (min-width: $tablet) and (max-width: $web) and (orientation : landscape) {
         // margin-top: 150px;
-      }     
+      }
+
+      .layer-bg {
+        height: 500px;
+
+        // sm ~ md- mobile ~ tablet
+        // reason being is that some mobile screen on landscape is bigger than ipad width.
+        @media screen  and (max-width: $web) and (orientation : portrait) {
+          height: 400px;
+        }
+
+        // sm ~ md- mobile ~ tablet
+        // reason being is that some mobile screen on landscape is bigger than ipad width.
+        @media screen and (min-width: $tablet) and (max-width: $web) and (orientation : landscape) {
+          height: 500px;
+        }
+
+      }
 
       .layer-logo {
         position: absolute;
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
       }
       // .titl-logo-img {
       //   position: absolute;
@@ -268,7 +291,7 @@ $web: 992px;
     
       // sm- mobile
       @media screen and (max-width: $phone) and (orientation : portrait) {
-        margin-top: 200px;
+        margin-top: -120px;
         align-items: center;
       }
 
@@ -372,4 +395,28 @@ $web: 992px;
  background-position: 28% 0%;
  height:100vh;
  width:100%; 
+}
+
+
+
+
+
+.bg-img1 {
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Layer-135316.jpg');
+}
+
+.bg-img2 {
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('https://i.pinimg.com/originals/96/18/6b/96186b308addc3c4700a26adb3aac278.gif');
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 100%;
+  position: relative;
 }

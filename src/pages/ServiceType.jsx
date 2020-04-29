@@ -17,37 +17,35 @@ const CardSection = ({ img, desc }) => {
                 </div>
             </div>
             <div className="card-content-wrapper">
-                <div className="card-desc">
+                <div className="card-desc p-4">
                     {desc}
                 </div>
             </div>
         </div>
     );
   };
-  
+
   const listItems = memberList.map((obj) => (
     <CardSection key={obj.key} img={obj.img} desc={obj.desc}/>
   ));
 
 const ServiceType = () => {
-    
+
     const home2SectionStyle = {
-        height:'100vh'
+        height:'100%',
+        width: '100vw'
       };
 
-
     return (
-        
+
         <React.Fragment>
-            <Parallax className="custom-class" y={[10,10]} tagOuter="figure">
             <section className="home2-section" style={home2SectionStyle}>
                 <div className="container">
-                    <div className="service-type row">
+                    <div className="service-type row pt-9">
                         {listItems}
                     </div>
                 </div>
             </section>
-            </Parallax>
         </React.Fragment>
     );
 };

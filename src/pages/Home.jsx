@@ -11,8 +11,8 @@ const Home = ( {stickyRef} ) => {
         var parallaxInstance = new Parallax(scene);
         parallaxInstance.friction(0.2, 0.2);
         // parallaxInstance.hoverOnly = true;
-        parallaxInstance.limit(10, 5);
-        parallaxInstance.scalar(5, 5);
+        parallaxInstance.limit(5, 4);
+        parallaxInstance.scalar(2, 2);
     
       }, []);
 
@@ -29,8 +29,8 @@ const Home = ( {stickyRef} ) => {
                         </div>
                     </Tilt> */}
                     <div  id="scene">
-                        <div  class="layer" data-depth="10"><img src="https://jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/maybelline-highligher-facestudio-master-chrome-metallic-highlighter-molten-gold-041554538281-2t.png"></img></div >
-                        <div  class="layer" data-depth="5"><img className="layer-logo" src="https://jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Group-992.png"></img></div >
+                        <div  class="layer" data-depth="10"><img className="layer-bg" src="https://jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/maybelline-highligher-facestudio-master-chrome-metallic-highlighter-molten-gold-041554538281-2t.png" alt="bg"></img></div >
+                        <div  class="layer" data-depth="5"><img className="layer-logo" src="https://jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Group-992.png" alt="logo"></img></div >
                     </div >
                 </div>
                 <div className="text-wrapper">

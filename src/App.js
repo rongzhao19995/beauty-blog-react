@@ -51,10 +51,11 @@ function App() {
       <NavBar sticky={isSticky} isShowX={isShowX} showHandleHamburger={showHandleHamburger}/>
       {/* <Content> */}
         <Home stickyRef={stickyRef}/>
-        <Home2/>
+        {/* <Home2/> */}
+        <ServiceType/>
         <ServiceDetails/>
         <ServiceType/>
-        
+        <Home2/>
       {/* </Content> */}
 
     </div>

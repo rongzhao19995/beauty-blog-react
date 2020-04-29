@@ -15,7 +15,8 @@ export const AppContextProvider = ({ children }) => {
 	const stickyRef = useRef(null);
 
     const stickyNavigation = () => {
-		const nav = stickyRef.current.getBoundingClientRect().bottom - 750;
+		// const nav = stickyRef.current.getBoundingClientRect().bottom - 750;
+		const nav = stickyRef.current.getBoundingClientRect().bottom - 500;
 		console.log('navTop = ' + nav);
 		console.log('scrollY = ' + window.scrollY);
 		(window.scrollY >= nav) ? setSticky(true): setSticky(false);
