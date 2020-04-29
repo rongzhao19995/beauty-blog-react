@@ -1,25 +1,10 @@
+@import './style/common/variable.scss';
 @import "~bootstrap/scss/bootstrap";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;900&display=swap');
 
 @import './style/ServiceType.scss';
-
-* {
-  margin:0;
-  padding:0px;
-}
-
-body {
-  width:100vw;
-  height:100vh;
-  font-family: 'Montserrat', sans-serif;
-}
-
-// Breakpoints Variables
-$phone: 576px;
-$tablet: 768px;
-$web: 992px;
 
 
 // ---------------------------------------------- Nav Bar ------------------------------------------------------------------

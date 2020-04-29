@@ -55,7 +55,7 @@ function App() {
         <ServiceType/>
         <ServiceDetails/>
         <ServiceType/>
-        <Home2/>
+        <Home2/> 
       {/* </Content> */}
 
     </div>

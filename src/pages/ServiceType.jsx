@@ -17,7 +17,7 @@ const CardSection = ({ img, desc }) => {
                 </div>
             </div>
             <div className="card-content-wrapper">
-                <div className="card-desc p-4">
+                <div className="card-desc px-6 py-3">
                     {desc}
                 </div>
             </div>
@@ -41,7 +41,7 @@ const ServiceType = () => {
         <React.Fragment>
             <section className="home2-section" style={home2SectionStyle}>
                 <div className="container">
-                    <div className="service-type row pt-9">
+                    <div className="service-type row py-6">
                         {listItems}
                     </div>
                 </div>
