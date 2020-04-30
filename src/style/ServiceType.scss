@@ -1,0 +1,58 @@
+.service-type {
+
+    .card-img-wrapper {
+
+        .card-img {
+            height:220px;
+            width:220px;
+
+            @media screen and (max-width: $tablet) and (orientation: portrait) {
+                height: 300px;
+                width: 300px;
+            }
+
+            @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait) {
+                height: 150px;
+                width: 150px;
+            }
+
+            @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
+                height: 150px;
+                width: 150px;
+            }
+
+            img {
+                height:inherit;
+                width:inherit;
+            }
+
+        }
+
+    }
+
+    .card-content-wrapper {
+
+        .card-desc {
+            width:220px;
+            font-family: "Montserrat";
+            color: #363636;
+            letter-spacing: 2px;
+            font-weight: 400;
+            font-size: 14px;
+
+            @media screen and (max-width: $tablet) and (orientation: portrait){
+                width: 300px;
+            }
+
+            @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait){
+                width: 150px;
+            }
+
+            @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
+                width: 150px;
+            }
+        }
+
+    }
+
+}

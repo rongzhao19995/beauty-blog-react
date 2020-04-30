@@ -1,17 +1,15 @@
 @import './style/common/variable.scss';
-@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;900&display=swap');
 
 @import './style/ServiceType.scss';
 
-
 // ---------------------------------------------- Nav Bar ------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------------------------------
 
 .nav-wrapper {
-
   .navbar {
     display: flex;
     align-items: center;
@@ -22,7 +20,6 @@
     width: 100%;
 
     .nav-opt {
-
       .navbar--link {
         margin: 0;
         padding: 10px 15px;
@@ -33,24 +30,20 @@
           // margin: 0.4rem 1rem 0 0;
           padding: 0 0.3rem;
           cursor: pointer;
-         
+
           .nav-link {
-            font-weight:700;
-            font-size:0.8rem;
+            font-weight: 700;
+            font-size: 0.8rem;
             color: #fff;
             letter-spacing: 2.5px;
 
             &.sticky {
-              color: rgba(80,80,80,1);
+              color: rgba(80, 80, 80, 1);
             }
           }
-
         }
-
       }
-
     }
-
   }
 
   .navbar-sticky {
@@ -58,10 +51,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index:99;
+    z-index: 99;
     animation: moveDown 0.2s ease-in;
   }
-
 }
 
 .nav-mobile-wrapper {
@@ -70,9 +62,8 @@
   z-index: 5;
 
   .navbar-mobile {
-
     &.c-close {
-      background-color:white;
+      background-color: white;
     }
 
     .navbar-header {
@@ -82,11 +73,9 @@
       padding: 20px;
 
       .nav-log {
-
       }
 
       .navbar-hamburger {
-
         .hamburger {
           height: 2rem;
           width: 2rem;
@@ -99,23 +88,23 @@
             .bar {
               transition: top 100ms 230ms, transform 100ms, opacity 100ms;
               transition-timing-function: cubic-bezier(1, 0.05, 0.62, 1.78);
-        
+
               &:first-of-type {
                 top: 0.5em;
                 transform: rotate(45deg);
               }
-        
+
               &:nth-of-type(2) {
                 opacity: 0;
               }
-        
+
               &:nth-of-type(3) {
                 top: 0.5em;
                 transform: rotate(-45deg);
               }
             }
           }
-        
+
           .bar {
             height: 0.33rem;
             background: linear-gradient(to right, #f2709c, #ff9472);
@@ -124,27 +113,22 @@
             width: 100%;
             transition: top 100ms, transform 100ms 230ms, opacity 100ms 230ms;
             transition-timing-function: cubic-bezier(1, 0.05, 0.62, 1.78);
-        
+
             &:first-of-type {
               top: 0;
             }
-        
+
             &:nth-of-type(2) {
               top: 0.5rem;
             }
-        
+
             &:nth-of-type(3) {
               top: 1rem;
             }
-
           }
-
         }
-
       }
-
     }
-
 
     .nav-opt {
       height: 100vh;
@@ -161,7 +145,6 @@
         margin: 0;
 
         .navbar--link-item {
-
           .nav-link {
             display: block;
             // padding: 50px;
@@ -173,38 +156,35 @@
 
             // sm ~ md- mobile ~ tablet
             // reason being is that some mobile screen on landscape is bigger than ipad width.
-            @media screen and (min-width: $tablet) and (max-width: $web)  {
+            @media screen and (min-width: $tablet) and (max-width: $web) {
               padding-top: calc(100% - 140px);
-            }     
+            }
 
             // md- tablet
             // @media screen and (min-width: $phone) and (max-width: $tablet) {
             //   padding-top: calc(100% - 180px);
             // }
-
           }
-    
+
           a {
-            color:#f2709c;
+            color: #f2709c;
             text-decoration: none;
           }
         }
       }
 
       &.close {
-        display:none;
+        display: none;
       }
     }
   }
 }
 
-
-
 // ---------------------------------------------- Home Page ------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------------------------------
 
 .main-section {
-  display:flex;
+  display: flex;
   flex-direction: column;
 
   .container {
@@ -217,7 +197,7 @@
 
       // sm ~ md- mobile ~ tablet
       // reason being is that some mobile screen on landscape is bigger than ipad width.
-      @media screen  and (max-width: $web) and (orientation : portrait) {
+      @media screen and (max-width: $web) and (orientation: portrait) {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -228,7 +208,7 @@
 
       // sm ~ md- mobile ~ tablet
       // reason being is that some mobile screen on landscape is bigger than ipad width.
-      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation : landscape) {
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
         // margin-top: 150px;
       }
 
@@ -237,16 +217,15 @@
 
         // sm ~ md- mobile ~ tablet
         // reason being is that some mobile screen on landscape is bigger than ipad width.
-        @media screen  and (max-width: $web) and (orientation : portrait) {
+        @media screen and (max-width: $web) and (orientation: portrait) {
           height: 400px;
         }
 
         // sm ~ md- mobile ~ tablet
         // reason being is that some mobile screen on landscape is bigger than ipad width.
-        @media screen and (min-width: $tablet) and (max-width: $web) and (orientation : landscape) {
+        @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
           height: 500px;
         }
-
       }
 
       .layer-logo {
@@ -260,53 +239,52 @@
       //   height: 300px;
       //   width: 300px;
       // }
-
     }
 
     .text-wrapper {
       margin-top: 30%;
-      padding:0px;
+      padding: 0px;
       text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: start;
       text-transform: uppercase;
-      color:rgba(54, 54, 54, 0.95);
-    
+      color: rgba(54, 54, 54, 0.95);
+
       // sm- mobile
-      @media screen and (max-width: $phone) and (orientation : portrait) {
+      @media screen and (max-width: $phone) and (orientation: portrait) {
         margin-top: -120px;
         align-items: center;
       }
 
       // sm ~ md- mobile ~ tablet
       // reason being is that some mobile screen on landscape is bigger than ipad width.
-      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation : portrait) {
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait) {
         margin-top: 150px;
         align-items: center;
-      }     
-      
+      }
+
       // sm ~ md- mobile ~ tablet
       // reason being is that some mobile screen on landscape is bigger than ipad width.
-      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation : landscape) {
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
         margin-top: 150px;
-      }     
+      }
 
       // // md- tablet
       // @media screen and (min-width: $phone) and (max-width: $tablet) {
       //   text-align: left;
       //   margin-top: 150px;
       // }
-  
+
       .text-header {
         font-family: 'Playfair Display', serif;
-        font-weight:900;
-        font-size:6.5rem;
+        font-weight: 900;
+        font-size: 6.5rem;
         line-height: 6.5rem;
         white-space: nowrap;
-        z-index:1;
-        
+        z-index: 1;
+
         // sm- mobile
         @media screen and (max-width: $phone) {
           font-size: 2.5rem;
@@ -315,19 +293,18 @@
 
         // sm ~ md- mobile ~ tablet
         // reason being is that some mobile screen on landscape is bigger than ipad width.
-        @media screen and (min-width: $tablet) and (max-width: $web)  {
+        @media screen and (min-width: $tablet) and (max-width: $web) {
           font-size: 3rem;
           line-height: 3rem;
-        }     
+        }
 
         // md- tablet
         @media screen and (min-width: $phone) and (max-width: $tablet) {
           font-size: 5rem;
           line-height: 5rem;
         }
-  
       }
-      
+
       .text-subheader {
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
@@ -337,7 +314,7 @@
         padding: 20px;
         text-align: center;
         margin-left: 50px;
-        z-index:1;
+        z-index: 1;
 
         // sm - mobile
         @media screen and (min-width: $phone) and (max-width: $tablet) {
@@ -348,50 +325,40 @@
           text-align: center;
           margin-left: 0px;
         }
-  
+
         // sm ~ md- mobile ~ tablet
         // reason being is that some mobile screen on landscape is bigger than ipad width.
-        @media screen and (min-width: $tablet) and (max-width: $web) and (orientation : landscape) {
+        @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
           font-size: 0.7rem;
           line-height: 1rem;
           letter-spacing: 5px;
           padding: 20px;
           text-align: center;
           margin-left: 0px;
-        }     
+        }
 
-      
         // md- tablet
-        @media screen and (min-width: $tablet) and (max-width: $web){
+        @media screen and (min-width: $tablet) and (max-width: $web) {
           // letter-spacing:2px;
         }
-  
       }
     }
-  
   }
-
 }
 
 // HOME
 .main-section {
- background-image:url(https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/18/2018/03/model-60022216.jpg);
- background-size: cover;
- background-position: 28% 0%;
- height:100vh;
- width:100%; 
+  background-image: url(https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/18/2018/03/model-60022216.jpg);
+  background-size: cover;
+  background-position: 28% 0%;
+  height: 100vh;
+  width: 100%;
 }
-
-
-
-
 
 .bg-img1 {
-  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Layer-135316.jpg');
-}
-
-.bg-img2 {
-  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('https://i.pinimg.com/originals/96/18/6b/96186b308addc3c4700a26adb3aac278.gif');
+  background:
+  // linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Layer-135316.jpg');
 }
 
 .parallax {

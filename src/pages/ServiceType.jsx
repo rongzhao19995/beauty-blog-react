@@ -10,18 +10,20 @@ const memberList = [
 
 const CardSection = ({ img, desc }) => {
     return (
-        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-3 p-2 d-flex flex-column justify-content-center align-items-center">
+        <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 p-2 d-flex flex-column justify-content-center align-items-center">
+            {/* <div className="container"> */}
             <div className="card-img-wrapper">
                 <div className="card-img">
                     <img src={img} alt="img"/>
                 </div>
             </div>
             <div className="card-content-wrapper">
-                <div className="card-desc px-6 py-3">
+                <div className="card-desc px-4 py-3">
                     {desc}
                 </div>
             </div>
-        </div>
+            </div>
+        // </div>
     );
   };
 
