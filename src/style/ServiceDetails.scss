@@ -1,0 +1,86 @@
+
+
+  .home2-section {
+
+    .bg-img1 {
+        background:
+        // linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url('https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Layer-135316.jpg');
+    }
+      
+    .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        min-height: 70%;
+        position: relative;
+      }
+      
+
+      .text-wrapper{
+
+
+        .header {
+            line-height: 70px!important;
+            font-weight: 900!important;
+            color: #ffffff;
+            font-family: 'Playfair Display';
+            font-size: 72px;
+
+            @media screen and (max-width: $tablet) and (orientation: portrait) {
+                font-size: 40px;
+            }
+
+            @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait) {
+                font-size: 72px;
+            }
+
+            @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
+                font-size: 40px;
+            }
+
+        }
+
+        .sub-header {
+            letter-spacing: 10px;
+            font-weight: 600!important;
+            color: #ffffff;
+            font-family: 'Montserrat';
+            font-size: 14px;
+        }
+
+      }
+
+      .ddl-wrapper {
+        background: white;
+
+        .card-header {
+            background: white;
+            color: #363636;
+            line-height: normal!important;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .card-body {
+            font-family: "Montserrat";
+            letter-spacing: 2px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 30px;
+            color: #8d8d8d;
+
+            li {
+                font-family: "Montserrat";
+                letter-spacing: 2px;
+                font-weight: 400;
+            }
+        }
+
+      }
+  }

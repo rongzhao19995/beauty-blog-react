@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;900&display=swap');
 
 @import './style/ServiceType.scss';
+@import './style/ServiceDetails.scss';
 
 // ---------------------------------------------- Nav Bar ------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------------------------------
@@ -52,6 +53,7 @@
     top: 0;
     left: 0;
     z-index: 99;
+    border-bottom: 1px solid rgba( 0,0,0,0.08 );
     animation: moveDown 0.2s ease-in;
   }
 }
@@ -353,22 +355,4 @@
   background-position: 28% 0%;
   height: 100vh;
   width: 100%;
-}
-
-.bg-img1 {
-  background:
-  // linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Layer-135316.jpg');
-}
-
-.parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  min-height: 100%;
-  position: relative;
 }
