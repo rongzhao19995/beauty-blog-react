@@ -1,5 +1,9 @@
 import React from 'react';
-
+import Button from 'react-bootstrap/Button';
+import Accordion from 'react-bootstrap/Accordion';
+import Card from 'react-bootstrap/Card';
+// import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 
 const ServiceDetails = () => {
 
@@ -16,13 +20,58 @@ const ServiceDetails = () => {
     return (
         <section className="home2-section" style={home2SectionStyle}>
             <div class="container-fluid parallax bg-img1">
-                <div class="middle">
-                    <div class="container" style={{'max-width': '550px'}}>
-                        <blockquote class="text-center">
-                            <i class="" aria-hidden="true"></i>
-                            <p class="p-9 ">Many of my movies have strong female leads—brave, self-sufficient girls that don’t think twice about fighting for what they believe in with all their heart. They’ll need a friend, or a supporter, but never a saviour.</p>
-                            <footer class="blockquote-footer text-uppercase text-white">Hayao Miyazaki</footer>
-                        </blockquote>
+                <div class="container">
+                    <div className="row py-9">
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div className="header">
+                                BEAUTY<br/>LABORATORY
+                            </div>
+                            <div className="sub-header">
+                                Prices and services we offer
+                            </div>
+                        </div>
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div className="ddl-wrapper">
+                                <Accordion defaultActiveKey="0">
+                                    <Card>
+                                        <Card.Header>
+                                        <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                                            Hairdresser
+                                        </Accordion.Toggle>
+                                        </Card.Header>
+                                        <Accordion.Collapse eventKey="0">
+                                        <Card.Body>
+                                            <p><span >Ut imperdiet urna sed eros feugiat sodales. Curabitur tellus lorem, volutpat eu sem ut, facilisis elementum nulla:</span></p>
+                                            <ul>
+                                            <li><span >20$ Long hairstyle </span></li>
+                                            <li><span >25$ Medium hairstyle </span></li>
+                                            <li><span >46$ Regular coloring </span></li>
+                                            <li><span >50$ Ombre coloring</span></li>
+                                            </ul>
+                                        </Card.Body>
+                                        </Accordion.Collapse>
+                                    </Card>
+                                    <Card>
+                                        <Card.Header>
+                                        <Accordion.Toggle as={Button} variant="link" eventKey="1">
+                                            Manicure & Pedicure
+                                        </Accordion.Toggle>
+                                        </Card.Header>
+                                        <Accordion.Collapse eventKey="1">
+                                        <Card.Body>
+                                            <p><span >Ut imperdiet urna sed eros feugiat sodales. Curabitur tellus lorem, volutpat eu sem ut, facilisis elementum nulla:</span></p>
+                                            <ul>
+                                            <li><span >20$ Long hairstyle </span></li>
+                                            <li><span >25$ Medium hairstyle </span></li>
+                                            <li><span >46$ Regular coloring </span></li>
+                                            <li><span >50$ Ombre coloring</span></li>
+                                            </ul>
+                                        </Card.Body>
+                                        </Accordion.Collapse>
+                                    </Card>
+                                </Accordion>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
