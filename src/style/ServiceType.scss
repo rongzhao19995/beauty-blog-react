@@ -5,8 +5,6 @@
         .card-img {
             height:220px;
             width:220px;
-            transition:5s;
-            cursor: pointer;
 
             @media screen and (max-width: $tablet) and (orientation: portrait) {
                 height: 300px;

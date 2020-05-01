@@ -22,7 +22,7 @@ const ServiceDetails = () => {
             <div class="container-fluid parallax bg-img1">
                 <div class="container">
                     <div className="row py-9">
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                             <div className="text-wrapper py-5">
                                 <div className="header">
                                     BEAUTY<br/>LABORATORY
@@ -32,7 +32,7 @@ const ServiceDetails = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                             <div className="ddl-wrapper p-5">
                                 <Accordion>
                                     <Card>
