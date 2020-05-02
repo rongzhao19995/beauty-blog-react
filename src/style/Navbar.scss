@@ -1,0 +1,188 @@
+// ---------------------------------------------- Nav Bar ------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------
+
+.nav-wrapper {
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 80px;
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+  
+      .nav-opt {
+        .navbar--link {
+          margin: 0;
+          padding: 10px 15px;
+          display: flex;
+          list-style: none;
+  
+          .navbar--link-item {
+            // margin: 0.4rem 1rem 0 0;
+            padding: 0 0.3rem;
+            cursor: pointer;
+  
+            .nav-link {
+              font-weight: 700;
+              font-size: 0.8rem;
+              color: #fff;
+              letter-spacing: 2.5px;
+  
+              &.sticky {
+                color: rgba(80, 80, 80, 1);
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .navbar-sticky {
+      background-color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      border-bottom: 1px solid rgba( 0,0,0,0.08 );
+      animation:mymove 0.5s ease-in ;
+
+      @keyframes mymove
+      { from {top:-10px; opacity: 0;}
+      to {top:0px; opacity: 1}
+      }
+
+      @-webkit-keyframes mymove /* Safari and Chrome */
+      {
+      from {top:-10px; opacity: 0;}
+      to {top:0px; opacity: 1;}
+      }
+
+    }
+    
+  }
+  
+  .nav-mobile-wrapper {
+    position: absolute;
+    width: 100vw;
+    z-index: 5;
+  
+    .navbar-mobile {
+      &.c-close {
+        background-color: white;
+      }
+  
+      .navbar-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+  
+        .nav-log {
+        }
+  
+        .navbar-hamburger {
+          .hamburger {
+            height: 2rem;
+            width: 2rem;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            margin-top: 10px;
+  
+            &.opened {
+              .bar {
+                transition: top 100ms 230ms, transform 100ms, opacity 100ms;
+                transition-timing-function: cubic-bezier(1, 0.05, 0.62, 1.78);
+  
+                &:first-of-type {
+                  top: 0.5em;
+                  transform: rotate(45deg);
+                }
+  
+                &:nth-of-type(2) {
+                  opacity: 0;
+                }
+  
+                &:nth-of-type(3) {
+                  top: 0.5em;
+                  transform: rotate(-45deg);
+                }
+              }
+            }
+  
+            .bar {
+              height: 0.33rem;
+              background: linear-gradient(to right, #f2709c, #ff9472);
+              position: absolute;
+              display: block;
+              width: 100%;
+              transition: top 100ms, transform 100ms 230ms, opacity 100ms 230ms;
+              transition-timing-function: cubic-bezier(1, 0.05, 0.62, 1.78);
+  
+              &:first-of-type {
+                top: 0;
+              }
+  
+              &:nth-of-type(2) {
+                top: 0.5rem;
+              }
+  
+              &:nth-of-type(3) {
+                top: 1rem;
+              }
+            }
+          }
+        }
+      }
+  
+      .nav-opt {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+  
+        .navbar--link {
+          display: block;
+          text-align: center;
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+  
+          .navbar--link-item {
+            .nav-link {
+              display: block;
+              // padding: 50px;
+  
+              // sm- mobile
+              @media screen and (max-width: $phone) {
+                padding-top: calc(100% - 180px);
+              }
+  
+              // sm ~ md- mobile ~ tablet
+              // reason being is that some mobile screen on landscape is bigger than ipad width.
+              @media screen and (min-width: $tablet) and (max-width: $web) {
+                padding-top: calc(100% - 140px);
+              }
+  
+              // md- tablet
+              // @media screen and (min-width: $phone) and (max-width: $tablet) {
+              //   padding-top: calc(100% - 180px);
+              // }
+            }
+  
+            a {
+              color: #f2709c;
+              text-decoration: none;
+            }
+          }
+        }
+  
+        &.close {
+          display: none;
+        }
+      }
+    }
+  }
+  
