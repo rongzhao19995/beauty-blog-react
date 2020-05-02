@@ -7,6 +7,7 @@ import Home2 from './pages/Home2';
 import { AppContext } from './context/AppContext';
 import ServiceType from "./pages/ServiceType";
 import ServiceDetails from "./pages/ServiceDetails";
+import Artist from './pages/Artist';
 
 function App() {
 
@@ -54,8 +55,9 @@ function App() {
         {/* <Home2/> */}
         <ServiceType/>
         <ServiceDetails/>
-        <ServiceType/>
-        <Home2/> 
+        {/* <ServiceType/> */}
+        <Artist/>
+        {/* <Home2/> */}
       {/* </Content> */}
 
     </div>

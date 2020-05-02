@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import { Parallax } from 'react-scroll-parallax';
 
 const memberList = [
     { key: "item1", img: "https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/18/2018/03/Group-4-copy-31.jpg", "img_hover":'https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/18/2018/03/services-hover9.jpg', desc: "Mauris efficitur purus id neque tempor, eu faucibus ligula sodales." },

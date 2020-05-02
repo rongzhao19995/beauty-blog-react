@@ -9,17 +9,13 @@ import { useAccordionToggle } from 'react-bootstrap/AccordionToggle';
 const ServiceDetails = () => {
 
     const home2SectionStyle = {
-        height:'100vh',
+        height:'100%',
         width: '100vw'
       };
 
-    //   const parallexPicStyle = {
-    //     width: '100vw'
-    //   };
-
     return (
         <section className="home2-section" style={home2SectionStyle}>
-            <div class="container-fluid parallax bg-img1">
+            <div class="container-fluid parallax bg-img1" >
                 <div class="container">
                     <div className="row py-9">
                         <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
