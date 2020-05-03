@@ -72,7 +72,7 @@ const listItems = memberList.map((obj, index) => (
 const Artist = () => {
 
     const artistSectionStyle = {
-        height:'100vh',
+        height:'100%',
         width: '100vw'
       };
 
