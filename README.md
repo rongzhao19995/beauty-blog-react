@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rongzhao19995/beauty-blog-react/master/landingpage.png" alt="drawing" width="100"/>
+  <img src="https://raw.githubusercontent.com/rongzhao19995/beauty-blog-react/master/landingpage.png" alt="drawing" width="1000" />
 </p>
 
 
