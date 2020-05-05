@@ -3,7 +3,7 @@
 </p>
 
 
-<h2 align="center">Motion Layout</h2>
+<h2 align="center">Beauty Website</h2>
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
