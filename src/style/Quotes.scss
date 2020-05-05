@@ -1,143 +1,243 @@
 .quotes-section {
-    height:100%;
-    width: 100vw;
-    background-color: #f4f4f4;
+  height: 100%;
+  width: 100vw;
+  background-color: #f4f4f4;
 
-    @media screen and (max-width: $tablet) and (orientation: portrait){
-        height:100vh;
-    }
+  @media screen and (max-width: $tablet) and (orientation: portrait) {
+    height: 100vh;
+  }
 
-    @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait){
-        display:none;
-    }
+  @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait) {
+    height: 100vh;
+  }
 
-    @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
-        display:none;
-    }
+  @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
+    height: 100%;
+  }
+
+  @media screen and (min-width: $web){
+    height: 550px;
+  }
+
+  .fix-element {
+    height:15vh;
+
+    @media screen and (min-width: $web) {
+        height:30%;
+      }
 
     .header {
-        text-align: center;
-        font-family: 'Playfair Display';
-        font-weight: 900;
-        color: #363636;
-        font-size: 60px;
+      text-align: center;
+      font-family: 'Playfair Display';
+      color: #363636;
+      font-weight: 900;
+      font-size: 60px;
+
+      @media screen and (max-width: $tablet) and (orientation: portrait) {
+        font-size: 40px;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait) {
+        // background-color:red;
+        // color:red;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
+        // background-color:red;
+        // color:red;
+      }
+
+
+
+
     }
 
     .sub-header {
-        text-align: center;
-        font-family: 'Montserrat';
-        letter-spacing: 10px;
-        font-weight: 400;
-        color: #363636;
-        font-size: 14px;
+      text-align: center;
+      font-family: 'Montserrat';
+      color: #363636;
+      letter-spacing: 10px;
+      font-weight: 400;
+      font-size: 14px;
+
+      @media screen and (max-width: $tablet) and (orientation: portrait) {
+        font-size: 13px;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait) {
+        // background-color:red;
+        // color:red;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
+        // background-color:red;
+        // color:red;
+      }
     }
+  }
 
-    .changeable-wrapper {
-        text-align: center;
+  .dynamic-element {
+    height:80vh;
 
-        .desc {
-            font-style: italic;
-            font-family: "Montserrat";
-            color: #363636;
-            letter-spacing: 2px;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 30px;
-        }
-
-        .name {
-            font-size: 16px;
-            font-family: "Montserrat";
-            color: #363636;
-            font-weight: 700;
-        }
-
-        .remark {
-            font-family: "Fira Sans";
-            font-style: normal;
-            font-weight: 400;
-            font-variant: normal;
-            text-transform: none;
-            line-height: 1;
-        }
+    @media screen and (min-width: $web) {
+        height:70%;
+        overflow: hidden;
     }
 
     .awesome-slider {
-        height:400px;
+      background-color: #f4f4f4;
+      height: 100%;
 
-        @media screen and (max-width: $tablet) and (orientation: portrait){
-            height:550px;
+      @media screen and (max-width: $tablet) and (orientation: portrait) {
+        // min-height: 650px;
+        
+      }
+
+      @media screen and (max-width: $tablet) and (orientation: landscape) {
+        // height:450px;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait) {
+        // min-height: 580px;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
+        // height:400px;
+      }
+
+      .awssld__content {
+        height: auto;
+        align-items: start;
+        background-color: rgb(244, 244, 244);
+      }
+
+      .awssld__controls {
+        button {
+          top: calc(50% - (2 * var(--control-button-height)));
+          margin-left: 25%;
+          margin-right: 25%;
+
+          .awssld__controls__arrow-left,
+          .awssld__controls__arrow-right {
+            height: 25px;
+          }
+        }
+      }
+
+      .awssld__bullets {
+        display: none;
+
+        @media screen and (max-width: $tablet) and (orientation: portrait) {
+          background-color: #f4f4f4;
+          padding: 20px;
+          bottom: auto;
+          display: flex;
         }
 
-        @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait){
-            display:none;
+        @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait) {
+          background-color: #f4f4f4;
+          padding: 20px;
+          bottom: auto;
+          display: flex;
         }
 
         @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
-            display:none;
+          display: none;
         }
+      }
+    }
+  }
 
-        .awssld__content {
-            height:auto;
-            align-items: start;
-            background-color: rgb(244, 244, 244);
-        }
+  .changeable-wrapper {
+    text-align: center;
 
-        .awssld__controls {
+    .desc {
+      font-style: italic;
+      font-family: 'Montserrat';
+      color: #363636;
+      letter-spacing: 2px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
 
-            button {
-                top:calc(50% - (2 * var(--control-button-height)));
-                margin-left: 25%;
-                margin-right: 25%;
+      @media screen and (max-width: $tablet) and (orientation: portrait) {
+        font-size: 13px;
+      }
 
-                .awssld__controls__arrow-left, .awssld__controls__arrow-right {
-                    height:25px;
-                }
-            }
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait) {
+        // background-color:red;
+        // color:red;
+      }
 
-        }
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
+        // background-color:red;
+        // color:red;
+      }
+    }
 
-        .awssld__bullets {
-            display:none;
+    .name {
+      font-size: 16px;
+      font-family: 'Montserrat';
+      color: #363636;
+      font-weight: 700;
+      padding: 1rem 5rem 1rem 5rem;
 
-            @media screen and (max-width: $tablet) and (orientation: portrait){
-                background-color: #f4f4f4;
-                padding: 20px;
-                bottom: auto;
-                display: flex;
-            }
+      @media screen and (max-width: $tablet) and (orientation: portrait) {
+        padding: 0rem 5rem 0rem 5rem;
+      }
 
-            @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait){
-                background-color: #f4f4f4;
-                padding: 20px;
-                bottom: auto;
-                display: flex;
-            }
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait) {
+        // background-color:red;
+        // color:red;
+      }
 
-            @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
-                display:none;
-            }
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
+        // background-color:red;
+        // color:red;
+      }
+    }
 
-        }
+    .remark {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      text-transform: none;
+      font-size: 30px;
+      line-height: 1;
+
+      @media screen and (max-width: $tablet) and (orientation: portrait) {
+        // font-size: 30px;
+        // line-height: 1;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait) {
+        // background-color:red;
+        // color:red;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
+        // background-color:red;
+        // color:red;
+      }
 
     }
+  }
+
 }
 
-
-
 .aws-btn {
-
-    --slider-height-percentage: 41%;
-    --slider-transition-duration: 606ms;
-    --organic-arrow-thickness: 3px;
-    --organic-arrow-border-radius: 0px;
-    --organic-arrow-height: 23px;
-    --organic-arrow-color: #8d8d8d;
-    --control-button-width: 5%;
-    --control-button-height: 25%;
-    --control-button-background: transparent;
-    --control-bullet-color: #62a4fa;
-    --control-bullet-active-color: #538bd5;
-    --loader-bar-color: #851515;
-    --loader-bar-height: 1px;
-    }
+  --slider-height-percentage: 41%;
+  --slider-transition-duration: 606ms;
+  --organic-arrow-thickness: 3px;
+  --organic-arrow-border-radius: 0px;
+  --organic-arrow-height: 23px;
+  --organic-arrow-color: #8d8d8d;
+  --control-button-width: 5%;
+  --control-button-height: 25%;
+  --control-button-background: transparent;
+  --control-bullet-color: #62a4fa;
+  --control-bullet-active-color: #538bd5;
+  --loader-bar-color: #851515;
+  --loader-bar-height: 1px;
+}

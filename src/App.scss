@@ -1,13 +1,14 @@
-@import './style/common/variable.scss';
+@import './style/common/_variable.scss';
 @import '~bootstrap/scss/bootstrap';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
 
-@import './style/ServiceType.scss';
-@import './style/ServiceDetails.scss';
-@import './style/Artist.scss';
-@import './style/Home.scss';
-@import './style/Navbar.scss';
-@import './style/Quotes.scss';
+@import './style/serviceType.scss';
+@import './style/serviceDetails.scss';
+@import './style/artist.scss';
+@import './style/home.scss';
+@import './style/navbar.scss';
+@import './style/quotes.scss';
+@import './style/meetNeeds.scss';

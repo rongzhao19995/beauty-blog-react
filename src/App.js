@@ -9,6 +9,7 @@ import ServiceType from "./pages/ServiceType";
 import ServiceDetails from "./pages/ServiceDetails";
 import Artist from './pages/Artist';
 import Quotes from "./pages/Quotes";
+import MeetNeeds from './pages/MeetNeeds';
 
 function App() {
   const { isSticky, stickyRef, isShowX, showHandleHamburger } = useContext(AppContext);
@@ -24,6 +25,7 @@ function App() {
         {/* <ServiceType/> */}
         <Artist/>
         <Quotes/>
+        <MeetNeeds/>
       {/* </Content> */}
 
     </div>
