@@ -3,7 +3,19 @@
     width:100vw;
 
     .slick-item {
-        padding:3rem 0rem;
+        padding: 3rem 0rem;
+
+        @media screen and (max-width: $tablet) and (orientation: portrait){
+            padding: 0rem;
+        }
+
+        @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait){
+            width: 150px;
+        }
+
+        @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
+            width: 150px;
+        }
 
         img {
             max-width:100%;

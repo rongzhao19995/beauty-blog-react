@@ -52,11 +52,11 @@
       font-size: 14px;
     }
 
-    // .btn-wrapper {
+    .btn-wrapper {
       .btn {
         color: #fff;
         cursor: pointer;
-        // display: block;
+        display: block;
         font-size: 16px;
         font-weight: 400;
         line-height: 45px;
@@ -76,51 +76,48 @@
         }
 
         &.btn-1 {
-            // background: darken($red, 1.5%);
-            font-weight: 900;
-            
-            svg {
-              height: 55px;
-              left: 0;
-              position: absolute;
-              top: 0; 
-              width: 100%; 
-            }
-            
-            rect {
-              fill: none;
-              stroke: #fff;
-              stroke-width: 2;
-              stroke-dasharray: 422, 0;
-              transition: all 0.35s linear;
-            }
+          font-weight: 900;
+
+          svg {
+            height: 55px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
           }
-          
-          &.btn-1:hover {
-            // background: rgba($red, 0);
-            font-weight: 900;
-            letter-spacing: 1px;
-            
-            rect {
-              stroke-width: 5;
-              stroke-dasharray: 15, 310;
-              stroke-dashoffset: 48;
-              transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-            }
+
+          rect {
+            fill: none;
+            stroke: #fff;
+            stroke-width: 2;
+            stroke-dasharray: 422, 0;
+            transition: all 0.35s linear;
           }
-        
+        }
+
+        &.btn-1:hover {
+          // background: rgba($red, 0);
+          font-weight: 900;
+          letter-spacing: 1px;
+
+          rect {
+            stroke-width: 5;
+            stroke-dasharray: 15, 310;
+            stroke-dashoffset: 48;
+            transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+          }
+        }
       }
-
-    // }
-
+    }
   }
 
   .img-wrapper {
-    background: white;
 
     .image-items {
       max-width: 100%;
       height: auto;
     }
+
   }
+
 }

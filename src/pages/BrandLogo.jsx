@@ -2,10 +2,33 @@ import React from 'react';
 import Slider from "react-slick";
 import {isMobile} from 'react-device-detect';
 
+const brandLogoList = [
+    'https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Rectangle-4-copy-4.jpg',
+    'https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Rectangle-4-copy-2.jpg',
+    'https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Rectangle-4-copy.jpg',
+    'https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Rectangle-4-copy-4.jpg',
+    'https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Rectangle-4-copy-2.jpg',
+    'https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Rectangle-4-copy.jpg',
+];
+
+const CardSection =  ({ img}) => {
+    return(
+        <div className="slick-item">
+            <img src={img} alt="img" />
+        </div>
+    )
+};
+
+
+const listItems = brandLogoList.map((obj) => (
+    <CardSection key={obj} img={obj}/>
+
+));
+
 const BrandLogo = () => {
 
     const settings = {
-        dots: isMobile ? true : false,
+        // dots: isMobile ? true : false,
         slidesToShow: isMobile ? 1 : 3,
         slidesToScroll: 1,
         autoplay: true,
@@ -16,22 +39,7 @@ const BrandLogo = () => {
         <React.Fragment>
             <section className="brand-logo-section" >
                 <Slider {...settings}>
-                    <div className="slick-item">
-                        <img src="https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Rectangle-4-copy-4.jpg" alt="img" />
-                    </div>
-                    <div className="slick-item">
-                        <img src="https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Rectangle-4-copy-2.jpg" alt="img" />
-                    </div>
-                    <div className="slick-item">
-                        <img src="https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Rectangle-4-copy-4.jpg" alt="img" />
-                    </div>
-                    <div className="slick-item">
-                        <img src="https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Rectangle-4-copy-2.jpg" alt="img" />
-                    </div>
-                    <div className="slick-item">
-                        <img src="https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/Rectangle-4-copy.jpg" alt="img" />
-                    </div>
-
+                    {listItems}
                 </Slider>
             </section>
 
