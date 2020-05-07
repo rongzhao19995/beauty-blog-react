@@ -1,7 +1,5 @@
 import React, {useEffect} from 'react';
 import Parallax from 'parallax-js'
-import Tilt from 'react-parallax-tilt';
-
 
 const Home = ( {stickyRef} ) => {
 

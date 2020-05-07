@@ -1,8 +1,6 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
-import { useAccordionToggle } from 'react-bootstrap/AccordionToggle';
 
 
 
@@ -19,7 +17,7 @@ const ServiceDetails = () => {
                 <div class="container">
                     <div className="row py-9">
                         <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                            <div className="text-wrapper py-5">
+                            <div className="text-wrapper">
                                 <div className="header">
                                     BEAUTY<br/>LABORATORY
                                 </div>
@@ -29,14 +27,14 @@ const ServiceDetails = () => {
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                            <div className="ddl-wrapper p-5">
+                            <div className="ddl-wrapper">
                                 <Accordion>
                                     <Card>
                                         <Accordion.Toggle as={Card.Header}  eventKey="0" >
                                             Hairdresser
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="0">
-                                        <Card.Body className="py-3 px-5">
+                                        <Card.Body className="py-3">
                                             <p><span >Ut imperdiet urna sed eros feugiat sodales. Curabitur tellus lorem, volutpat eu sem ut, facilisis elementum nulla:</span></p>
                                             <ul>
                                             <li><span >20$ Long hairstyle </span></li>
@@ -52,7 +50,7 @@ const ServiceDetails = () => {
                                             Manicure & Pedicure
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="1">
-                                        <Card.Body className="py-3 px-5">
+                                        <Card.Body className="py-3">
                                             <p><span >Ut imperdiet urna sed eros feugiat sodales. Curabitur tellus lorem, volutpat eu sem ut, facilisis elementum nulla:</span></p>
                                             <ul>
                                             <li><span >20$ Long hairstyle </span></li>
@@ -68,7 +66,7 @@ const ServiceDetails = () => {
                                             Consultation
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="2">
-                                        <Card.Body className="py-3 px-5">
+                                        <Card.Body className="py-3">
                                             <p><span >Ut imperdiet urna sed eros feugiat sodales. Curabitur tellus lorem, volutpat eu sem ut, facilisis elementum nulla:</span></p>
                                             <ul>
                                             <li><span >20$ Long hairstyle </span></li>
@@ -84,7 +82,7 @@ const ServiceDetails = () => {
                                             Massages
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="3">
-                                        <Card.Body className="py-3 px-5">
+                                        <Card.Body className="py-3">
                                             <p><span >Ut imperdiet urna sed eros feugiat sodales. Curabitur tellus lorem, volutpat eu sem ut, facilisis elementum nulla:</span></p>
                                             <ul>
                                             <li><span >20$ Long hairstyle </span></li>
@@ -100,7 +98,7 @@ const ServiceDetails = () => {
                                             Skin Care
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="4">
-                                        <Card.Body className="py-3 px-5">
+                                        <Card.Body className="py-3">
                                             <p><span >Ut imperdiet urna sed eros feugiat sodales. Curabitur tellus lorem, volutpat eu sem ut, facilisis elementum nulla:</span></p>
                                             <ul>
                                             <li><span >20$ Long hairstyle </span></li>

@@ -21,7 +21,7 @@
       }
 
       .text-wrapper{
-
+        padding:3rem;
 
         .header {
             line-height: 70px;
@@ -60,6 +60,15 @@
 
       .ddl-wrapper {
         background: white;
+        padding:3rem;
+
+        @media screen and (max-width: $tablet) and (orientation: portrait) {
+            padding:1.5rem;
+        }
+
+        @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait) {
+            padding:1.5rem;
+        }
 
         .card {
             border: 0;
@@ -83,6 +92,15 @@
                 font-size: 14px;
                 line-height: 30px;
                 color: #8d8d8d;
+                padding:0rem 3rem;
+
+                @media screen and (max-width: $tablet) and (orientation: portrait) {
+                    padding:0rem 1.5rem;
+                }
+
+                @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait) {
+                    padding:0rem 1.5rem;
+                }
 
                 li {
                     font-family: "Montserrat";

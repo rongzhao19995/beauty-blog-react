@@ -1,97 +1,126 @@
+.meet-needs-section {
+  .bg-img2 {
+    background:
+    // linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/woman-3144280-copy3.jpg');
+  }
 
+  .parallax-2 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: intial;
+    -webkit-background-size: intial;
+    -moz-background-size: intial;
+    -o-background-size: intial;
+    min-height: 70%;
+    position: relative;
+  }
 
-  .home2-section {
+  .text-wrapper {
+    .header {
+      line-height: 70px;
+      font-weight: 900;
+      color: #ffffff;
+      font-family: 'Playfair Display';
+      font-size: 72px;
 
-    .bg-img2 {
-        background:
-        // linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-          url('https://cdn.jevelin.shufflehound.com/beauty/wp-content/uploads/sites/18/2018/03/woman-3144280-copy3.jpg');
+      @media screen and (max-width: $tablet) and (orientation: portrait) {
+        font-size: 40px;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait) {
+        font-size: 72px;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
+        font-size: 40px;
+      }
+
+      @media screen and (max-width: 1024px) and (orientation: landscape) {
+        font-size: 40px;
+        line-height: 50px;
+      }
     }
 
-    .parallax-2 {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: intial;
-        -webkit-background-size: intial;
-        -moz-background-size: intial;
-        -o-background-size: intial;
-        min-height: 70%;
+    .sub-header {
+      letter-spacing: 3px;
+      line-height: 2;
+      font-weight: 600;
+      color: #ffffff;
+      font-family: 'Montserrat';
+      font-size: 14px;
+    }
+
+    // .btn-wrapper {
+      .btn {
+        color: #fff;
+        cursor: pointer;
+        // display: block;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 45px;
+        margin: 0 0 2em;
+        max-width: 160px;
         position: relative;
-      }
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 100%;
 
-      .text-wrapper{
+        @media (min-width: 600px) {
+          margin: 0 1em 2em;
+        }
 
+        &:hover {
+          text-decoration: none;
+        }
 
-        .header {
-            line-height: 70px;
+        &.btn-1 {
+            // background: darken($red, 1.5%);
             font-weight: 900;
-            color: #ffffff;
-            font-family: 'Playfair Display';
-            font-size: 72px;
-
-            @media screen and (max-width: $tablet) and (orientation: portrait) {
-                font-size: 40px;
+            
+            svg {
+              height: 55px;
+              left: 0;
+              position: absolute;
+              top: 0; 
+              width: 100%; 
             }
-
-            @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: portrait) {
-                font-size: 72px;
+            
+            rect {
+              fill: none;
+              stroke: #fff;
+              stroke-width: 2;
+              stroke-dasharray: 422, 0;
+              transition: all 0.35s linear;
             }
-
-            @media screen and (min-width: $tablet) and (max-width: $web) and (orientation: landscape) {
-                font-size: 40px;
+          }
+          
+          &.btn-1:hover {
+            // background: rgba($red, 0);
+            font-weight: 900;
+            letter-spacing: 1px;
+            
+            rect {
+              stroke-width: 5;
+              stroke-dasharray: 15, 310;
+              stroke-dashoffset: 48;
+              transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
             }
-
-            @media screen and (max-width: 1024px) and (orientation: landscape) {
-                font-size: 40px;
-                line-height: 50px;
-            }
-        }
-
-        .sub-header {
-            letter-spacing: 10px;
-            font-weight: 600;
-            color: #ffffff;
-            font-family: 'Montserrat';
-            font-size: 14px;
-        }
-
+          }
+        
       }
 
-      .ddl-wrapper {
-        background: white;
+    // }
 
-        .card {
-            border: 0;
-            margin-top: -1px;
-
-            .card-header {
-                border: #1e2124 1px solid;
-                margin-bottom: 0px;
-                background: white;
-                color: #363636;
-                line-height: normal!important;
-                font-family: 'Montserrat';
-                font-weight: 700;
-                cursor: pointer;
-            }
-
-            .card-body {
-                font-family: "Montserrat";
-                letter-spacing: 2px;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 30px;
-                color: #8d8d8d;
-
-                li {
-                    font-family: "Montserrat";
-                    letter-spacing: 2px;
-                    font-weight: 400;
-                }
-            }
-
-        }
-
-      }
   }
+
+  .img-wrapper {
+    background: white;
+
+    .image-items {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
