@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rongzhao19995/beauty-blog-react/master/landingpage.png" alt="drawing" width="1000" />
+</p>
+
+
+<h2 align="center">Beauty Website</h2>
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
