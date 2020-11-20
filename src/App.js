@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState, useContext  } from "react";
-import './App.scss';
+import './style/App.css';
 import NavBar from './components/NavBar';
 import Content from './components/Content';
 import Home from './pages/Home';
