@@ -22,7 +22,8 @@
     "react-scroll-parallax": "^2.3.2",
     "react-simple-image-viewer": "0.0.4",
     "react-slick": "^0.25.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "start": "react-scripts start",
